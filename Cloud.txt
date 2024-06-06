@@ -1,0 +1,14 @@
+Primeiro precisa criar um dominio
+
+Registrar o DNS as rotas no route 53da aws, e precisamos colar no registro BR
+
+Vamos hospedar a aplicação no cloudfront  - uma forma mais facil e rapida de acessar 
+
+S3 Storage de objetos 
+Para hospedar sites  vamos criar um bucket S3,  nele vamos adicionar os arquivos da aplicação.
+
+Caso ainda nao tenha nenhum dominio cadastrado no Route 53, vai precisar um novo
+
+CloudFront
+Precisa criar uma distribuicao e um certificado
+

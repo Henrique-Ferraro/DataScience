@@ -1,0 +1,38 @@
+- Criei uma pagina Backend e instalei a dependencia do jsonServe
+- Criei um arquivo BD.Json Criei os objetos com os endpoints da API
+- Dentro od package Json configurei o Start "Json-server -- watch db.json -- port 3001
+
+- Single page application index.html que aponta para o componente raiz (Nome do seletor que se encontra em aap.component.ts)
+- Para criar um componente ng generate /Template/header
+já importou automaticamento o component header para o aap module
+- vamos referenciar o component header dentro de aap.component.HTML utilizando o seletor <app-header></app-header>
+
+- dentro de app module foi importado o MatToolbarModule do matireal e importar para dentro de imports
+
+
+
+
+promises - Para passar a função como parametro, e utiliza somente uma vez
+
+- Observable - diferente da promises consegue rreutilizar, lida com stream de dados em seguencia e operadores que são funções para trabalhar com os dados.
+Exemplo de Observable cursos-service e em consultarCursos
+
+
+No service são classes que tem como objetivo organizar e compartilhar metodo e dados entre os componentes
+Criando um service ng g s services/curso
+
+Decorator sempre utiliza o @
+@injectable essa classe pé detectada pelo angular e injetada em outras classes e responsavel por garantir por chamar uma derterminada instancia assim que solicitado
+
+ROUTES
+Importar as rotas dos componentes 
+
+DIRETIVA
+ng g d directive/read - 
+
+BINDING
+Exemplo Views - curso - curso.components.html no (click)
+
+Para criar as interaçoes com o backend será feito atraves de um modelo
+
+

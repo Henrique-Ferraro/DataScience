@@ -1,0 +1,2 @@
+C:\Users\polez\source\repos\FrontCRUD\Controller\obj\Debug\Controller.csproj.AssemblyReference.cache
+C:\Users\polez\source\repos\FrontCRUD\Controller\obj\Debug\Controller.csproj.CoreCompileInputs.cache

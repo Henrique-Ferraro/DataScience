@@ -1,0 +1,30 @@
+Quando desejamos criar uma expressão lógica com operadores lógicos, precisamos saber como funciona a tabela verdade de cada operador. Assim, conseguimos construir um código que resulte no que esperamos.
+
+As tabelas verdade são utilizadas para ajudar a entender e a analisar expressões lógicas, como as encontradas em algoritmos de programação, e para verificar a validade de uma dada expressão lógica. A tabela nos ajuda a verificar os resultados para todas as possíveis combinações de valores lógicos de dada expressão lógica.
+
+Vamos conhecer então a tabela verdade dos operadores lógicos and, or e not.
+
+Operador and
+A tabela verdade do operador and nos mostra que a saída somente retorna Verdade (True) se ambos os operandos são Verdade, caso contrário, retorna Falso (False), como mostrado na tabela abaixo:
+
+operando_1	operando_2	operando_1 and operando_2
+False	False	False
+False	True	False
+True	False	False
+True	True	True
+
+
+Operador or
+A tabela verdade do operador or nos mostra que a saída somente retorna Falso (False) se ambos os operandos são Falsos, caso contrário, retorna Verdade (True). Ou seja, será retornado True se pelo menos um dos operandos for True, como mostrado abaixo:
+
+operando_1	operando_2	operando_1 or operando_2
+False	False	False
+False	True	True
+True	False	True
+True	True	True
+Já o operador not tem uma tabela verdade menor, já que esse operador apenas inverte o valor do operando. Se o operando for Verdadeiro, retorna Falso, e se for Falso, retorna Verdadeiro.
+
+Operador not
+operando	not operando
+True	False
+False	True

@@ -1,0 +1,21 @@
+Ao trabalharmos com laços, conseguimos controlar o fluxo de execuções dentro do bloco de código, permitindo manipular a execução dos laços. O continue e o break são os comandos de controle que podemos executar nos laços for e while.
+
+O continue interrompe a iteração atual do laço e salta para a próxima iteração, ou seja, retorna ao início do código. Como exemplo, temos um código de contagem de 1 a 5 com for:
+
+for i in range(1,6):
+    if i == 4:
+        continue
+    print(i)COPIAR CÓDIGO
+O código vai imprimir todos os números de 1 a 5, exceto o 4. Quando o valor de i for 4, o continue salta para a próxima iteração, ignorando o comando print abaixo da condicional na iteração atual.
+
+Já o break vai interromper a execução do laço completamente, saindo do bloco de código. Vamos usar o mesmo exemplo de contagem, mas agora colocaremos o break:
+
+for i in range(1,6):
+    if i == 4:
+        break
+    print(i)COPIAR CÓDIGO
+Nesse caso, o código vai imprimir todos os números de 1 a 3. Quando o valor de i for 4, o break interrompe a execução do laço e sai dele, ignorando qualquer outra iteração que esteja dentro da estrutura.
+
+Em resumo, o continue permite pular uma iteração específica do laço, enquanto o break permite finalizar o laço e continuar a execução dos comandos fora dele, como mostrado abaixo:
+
+Imagem demonstrativa de como funcionam os comandos Continue e Break no while e for. A imagem está dividida em dois verticalmente, a metade esquerda intitulada CONTINUE e a direita BREAK. Tanto em CONTINUE como em BREAK, há dois códigos, divididos por uma linha horizontal. O código superior em CONTINUE é linha 1: while condição:, linha 2: # código dentro do laço, linha 3: continue, linha 4: # código dentro do laço, linha 5: # código fora do laço. O código inferior em CONTINUE é linha 1: for elemento in conjunto:, linha 2: # código dentro do laço, linha 3: continue, linha 4: # código dentro do laço, linha 5: #código fora do laço. Há uma seta ligando linha 3 à linha 2 em ambos os códigos. Os códigos em BREAK são idênticos aos em CONTINUE, com exceção da linha 3, nos códigos inferiores e superiores, onde lê-se break. Em ambos os códigos de BREAK, há uma seta conectando a linha 3 à linha 5. As linhas 2, 3 e 4 de todos os códigos estão tabuladas.

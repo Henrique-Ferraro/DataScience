@@ -1,0 +1,36 @@
+Como visto em aulas passadas, as strings são um tipo de dado que corresponde a um dado textual e quando criamos uma string estamos agrupando vários caracteres como números, letras e até símbolos, e cada um deles tem seus índices. Como exemplo, vamos criar uma string com o nome Python:
+
+linguagem = 'Python'COPIAR CÓDIGO
+Cada caractere da string linguagem pode ser acessado através de seu índice que inicia em 0 e vai até a quantidade de caracteres da string menos 1, incluindo os índices negativos. Conseguimos acessar eles do mesmo modo que acessamos com as listas:
+
+print(linguagem[0], linguagem[1], linguagem[2], linguagem[-3], linguagem[-2], linguagem[-1])COPIAR CÓDIGO
+Saída: P y t h o n
+
+No entanto, os índices servem apenas para acessar os dados, não sendo possível alterar o caractere presente em um índice definido através de uma simples atribuição, como nas listas. Por exemplo, o código linguagem[0] = 'p' gera um erro na compilação.
+
+Com isso, podemos pensar que as strings são uma estrutura de dados, da mesma forma que as listas: mas isso não é verdade! Strings são uma sequência de caracteres (letras, números, símbolos, etc.) representados por uma única variável; já uma estrutura de dados armazena uma coleção de itens (podendo ser de tipos diferentes) em uma única variável.
+
+Mesmo assim, é possível transformar uma string em uma lista através do método split(). Esse método separa a string em uma lista de strings, usando um delimitador especificado entre parêntesis. O delimitador precisa ser uma string. Como no exemplo, vamos transformar a string em lista separando-a cada vez que aparece o ponto de interrogação ?:
+
+duvida = 'Quem veio antes? O ovo? Ou foi a serpente?'
+lista_palavras = duvida.split('?')
+print(lista_palavras)COPIAR CÓDIGO
+Saída ['Quem veio antes', ' O ovo', ' Ou foi a serpente', '']
+
+O delimitador não aparece na separação. Caso não seja definido um delimitador, a string será segregada por todos os espaços em branco no texto.
+
+duvida = 'Quem veio antes? O ovo? Ou foi a serpente?'
+lista_palavras = duvida.split()
+print(lista_palavras)COPIAR CÓDIGO
+Saída ['Quem', 'veio', 'antes?', 'O', 'ovo?', 'Ou', 'foi', 'a', 'serpente?']
+
+O contrário também acontece, podemos transformar uma lista em uma string através do método join(). Para usar a função, precisamos definir o caractere unificador que será utilizado para unir os elementos da lista, formando a string. Em seguida, usamos o método join passando como argumento a lista. Vamos fazer um exemplo com uma lista contendo o resultado de algumas misturas de cores primárias em tintas:
+
+misturas = ['Tintas: vermelho, azul e amarelo',
+            'Verde: mistura de azul e amarelo',
+            'Laranja: mistura de vermelho e amarelo',
+            'Roxo: mistura de vermelho e azul']
+unificador = '. '
+string_misturas = unificador.join(misturas)
+print(string_misturas)COPIAR CÓDIGO
+Saída: Tintas: vermelho, azul e amarelo. Verde: mistura de azul e amarelo. Laranja: mistura de vermelho e amarelo. Roxo: mistura de vermelho e azul

@@ -1,0 +1,4 @@
+1 - Abrir Visual Studio
+2 - Criar um novo Projeto
+3 - Procurar no console "Aplicativo do Console (.NET Framework) ou Console App (.NET Framework)
+4 - 

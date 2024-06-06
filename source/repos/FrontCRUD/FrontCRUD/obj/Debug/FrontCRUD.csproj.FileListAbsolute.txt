@@ -1,0 +1,12 @@
+C:\Users\polez\source\repos\FrontCRUD\FrontCRUD\bin\Debug\FrontCRUD.exe.config
+C:\Users\polez\source\repos\FrontCRUD\FrontCRUD\bin\Debug\FrontCRUD.exe
+C:\Users\polez\source\repos\FrontCRUD\FrontCRUD\bin\Debug\FrontCRUD.pdb
+C:\Users\polez\source\repos\FrontCRUD\FrontCRUD\obj\Debug\FrontCRUD.csproj.AssemblyReference.cache
+C:\Users\polez\source\repos\FrontCRUD\FrontCRUD\obj\Debug\FrontCRUD.EnderecoForm.resources
+C:\Users\polez\source\repos\FrontCRUD\FrontCRUD\obj\Debug\FrontCRUD.PessoaForm.resources
+C:\Users\polez\source\repos\FrontCRUD\FrontCRUD\obj\Debug\FrontCRUD.Properties.Resources.resources
+C:\Users\polez\source\repos\FrontCRUD\FrontCRUD\obj\Debug\FrontCRUD.Telefone.resources
+C:\Users\polez\source\repos\FrontCRUD\FrontCRUD\obj\Debug\FrontCRUD.csproj.GenerateResource.cache
+C:\Users\polez\source\repos\FrontCRUD\FrontCRUD\obj\Debug\FrontCRUD.csproj.CoreCompileInputs.cache
+C:\Users\polez\source\repos\FrontCRUD\FrontCRUD\obj\Debug\FrontCRUD.exe
+C:\Users\polez\source\repos\FrontCRUD\FrontCRUD\obj\Debug\FrontCRUD.pdb

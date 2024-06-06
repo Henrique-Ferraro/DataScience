@@ -1,0 +1,12 @@
+1 - Você pode começar pela instalação do Python:
+
+Python 3.10.6
+
+2 - Em seguida, será necessário o instalador de pacotes pip. Abra o CMD/prompt ou terminal, conforme o seu sistema operacional e use os seguintes códigos:
+
+Para sistemas Windows:
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+python get-pip.py
+
+3 - Ao decorrer do curso iremos utilizar um ambiente virtualizado chamado virtualenv para construir os projetos da aula. Você pode instalar a virtualenv com o seguinte comando:
+pip install virtualenv

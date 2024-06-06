@@ -1,0 +1,85 @@
+É importante deixar o nosso código ou análise dos dados o mais acessível possível para o público. E, uma das formas de atingir esse propósito reside na documentação de funções.
+
+Neste tópico, podemos auxiliar quem lê o nosso projeto ou utiliza as funções que desenvolvemos a entender quais tipos de variáveis podemos utilizar, se existem ou não valores padrões ou até descrever de maneira sucinta o que aquele pedaço de código faz.
+
+Aqui, pedimos que você siga esse passo a passo na documentação da função de média que construímos durante a aula. Ela será novamente requisitada mais a frente em nossos estudos.
+
+Type Hint
+O Type Hint é uma sintaxe utilizada no Python para indicar o tipo de dados esperado de um parâmetro ou retorno de função, auxiliando na legibilidade e manutenção do código. Podemos dizer em poucas palavras que ela seria as dicas de tipagem dos dados.
+
+Formato:
+
+def <nome>(<param>: <tipo_param>) -> <tipo_retorno>:
+  <instruções>
+  return resultadoCOPIAR CÓDIGO
+Trazendo para o nosso exemplo da função media(), podemos utilizar o type hint da seguinte forma:
+
+# a nossa função recebe uma lista do tipo list e retorna uma variável do tipo float
+def media(lista: list) -> float:
+  calculo = sum(lista) / len(lista)
+  return calculoCOPIAR CÓDIGO
+Se escrevermos a função media() em outra célula e passarmos o mouse por cima, podemos observar a seguinte imagem apontando as dicas de tipagem dos parâmetros de entrada e retorno da função:
+
+alt-text: Print do código da função média com 4 linhas. Na primeira linha temos: def media(lista: list) -> float. Na segunda está escrita a frase “Ver código-fonte” e ela aparece como um link. Na terceira linha temos: “<function media at 0x7f2b147bc8b0>. Na quarta linha temos: media().
+
+Default value
+No Python, o Default Value é um valor padrão atribuído a um argumento de função, que é utilizado caso nenhum valor seja passado pelo usuário.
+
+Formato:
+
+  <nome_variavel>: <tipo_variavel> = <valor_variavel>COPIAR CÓDIGO
+Implementando ainda mais a nossa função media(), podemos utilizar o default value da seguinte forma:
+
+# a nossa função recebe uma lista do tipo list e retorna uma variável do tipo float
+# caso não recebe nenhum valor de parâmetro será passada uma lista com um único
+# elemento sendo ele zero
+def media(lista: list=[0]) -> float:
+  calculo = sum(lista) / len(lista)
+  return calculoCOPIAR CÓDIGO
+Da mesma forma que fizemos no type hint, se escrevermos a função media() em outra célula e passarmos o mouse por cima, podemos observar o que está na imagem abaixo. Nela temos apontado tanto as dicas de tipagem dos parâmetros de entrada e retorno da função quanto valor padrão para nossa lista, caso a pessoa usuária não passe nenhum valor na execução.
+
+alt-text: Print do código da função média com 4 linhas. Na primeira linha temos: def media(lista: list=[0]) -> float. Na segunda está escrito a frase “Ver código-fonte” e ela aparece como um link. Na terceira linha temos: “<function media at 0x7f2b24335790>. Na quarta linha temos: media(). 
+
+Se executarmos a função média, essa será a saída:
+
+Saída:
+
+0.0COPIAR CÓDIGO
+Docstring
+Por fim, temos o Docstring que é uma string literal usada para documentar um módulo, função, classe ou método em Python. Ela é colocada como o primeiro item de definição e pode ser acessada usando a função help().
+
+O Docstring deve descrever o propósito, parâmetros, tipo de retorno e exceções levantadas pela função. É uma boa prática de programação utilizar Docstrings em seu código para facilitar a leitura, manutenção e compartilhamento do código com outras pessoas desenvolvedoras.
+
+Formato:
+
+def <nome>(<param_1>, <param_2>, ..., <param_n>):
+    ''' Texto documentando sua função...
+    '''
+  <instruções>
+  return resultadoCOPIAR CÓDIGO
+Concluindo a implementação da nossa função media(), podemos utilizar o docstring da seguinte forma:
+
+def media(lista: list=[0]) -> float:
+  ''' Função para calcular a média de notas passadas por uma lista
+
+  lista: list, default [0]
+    Lista com as notas para calcular a média
+  return = calculo: float
+    Média calculada
+  '''
+  calculo = sum(lista) / len(lista)
+  return calculoCOPIAR CÓDIGO
+Se executarmos o código help(media) em uma outra célula, temos a seguinte saída:
+
+Saída:
+
+Help on function media in module __main__:
+
+media(lista: list = [0]) -> float
+    Função para calcular a média de notas passadas por uma lista
+
+    lista: list, default [0]
+      Lista com as notas para calcular a média
+    return = calculo: float
+      Média calculadaCOPIAR CÓDIGO
+Vamos deixar o link de um artigo, em inglês, explicando alguns conceitos de documentação de códigos em Python.

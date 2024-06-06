@@ -1,0 +1,36 @@
+Durante as aulas nós trabalhamos diretamente com várias funções built-in, que são funções pré-definidas e disponíveis por padrão no Python. Elas funcionam como ferramentas úteis para realizar tarefas comuns, como conversões de tipo, operações matemáticas, manipulação de strings e muito mais, sem a necessidade de escrever código adicional.
+
+Algumas funções built-in que já conhecemos são o print(), input(), len(), int(), str(), float(), range(), chr(), etc. Mas existem outras funções além dessas que também são muito úteis, como sum(), help() e dir(). Vamos conhecê-las?
+
+sum()
+A função sum() permite somar os elementos de uma sequência ou estrutura de dados. Por exemplo, vamos somar os preços de produtos:
+
+precos = [100.0, 400.0, 200.0]
+soma = sum(precos)
+somaCOPIAR CÓDIGO
+Saída: 700.0
+
+help()
+A função help() é usada para acessar a documentação de funções, métodos e outros elementos do Python. Ela exibe informações em inglês sobre a funcionalidade, sintaxe e uso de um objeto específico. Para usar a função help(), basta passar o elemento desejado entre parênteses. Por exemplo, vamos verificar a documentação da função print:
+
+help(print)COPIAR CÓDIGO
+# Saída:
+Help on built-in function print in module builtins:
+
+print(...)
+    print(value, ..., sep=' ', end='\n', file=sys.stdout, flush=False)
+
+    Prints the values to a stream, or to sys.stdout by default.
+    Optional keyword arguments:
+    file:  a file-like object (stream); defaults to the current sys.stdout.
+    sep:   string inserted between values, default a space.
+    end:   string appended after the last value, default a newline.
+    flush: whether to forcibly flush the stream.COPIAR CÓDIGO
+dir()
+Por fim, a função dir() é usada para exibir uma lista de atributos e métodos associados a um elemento. Como exemplo, vamos descobrir todos os atributos em métodos de uma lista:
+
+lista = [1,2,3]
+dir(lista)COPIAR CÓDIGO
+Saída: ['add', 'class', 'contains', 'delattr', 'delitem', 'dir', 'doc', 'eq', 'format', 'ge', 'getattribute', 'getitem', 'gt', 'hash', 'iadd', 'imul', 'init', 'init_subclass', 'iter', 'le', 'len', 'lt', 'mul', 'ne', 'new', 'reduce', 'reduce_ex', 'repr', 'reversed', 'rmul', 'setattr', 'setitem', 'sizeof', 'str', 'subclasshook', 'append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']
+
+É interessante conhecer várias funções do built-in e como elas funcionam, pois elas auxiliam bastante na criação de códigos. Para mais funções, você pode acessar a documentação do Python.

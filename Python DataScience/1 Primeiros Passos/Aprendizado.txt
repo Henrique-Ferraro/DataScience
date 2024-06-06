@@ -1,0 +1,32 @@
+1 COMEÇANDO COM PYTHON
+
+Utilizar o Google Colab para projetos Python;
+Aplicar a função print para imprimir resultados na tela;
+Entender o que é o Python e sua história.
+
+2 MANIPULANDO DADOS NO PYTHON
+
+Criar variáveis em Python;
+Distinguir os diferentes tipos de dados;
+Realizar operações com variáveis numéricas;
+Manipular variáveis de texto (strings); e
+Coletar dados de uma pessoa usuária com input.
+
+3 ESTRUTURAS CONDICIONAIS
+
+Construir blocos condicionais com if, else e elif;
+Diferenciar as estruturas condicionais;
+Selecionar a estrutura condicional que melhor satisfaz o problema; e
+Utilizar diferentes operadores para construir expressões condicionais.
+
+4 ESTRUTURA DE REPETIÇÃO
+
+Estruturar os laços de repetição for e while;
+Decidir qual laço de repetição utilizar; e
+Utilizar comandos de controle de laços.
+
+ESTRUTURAS DE DADOS
+
+Construir estruturas de dados;
+Criar listas e dicionários; e
+Preencher e manipular listas e dicionários.

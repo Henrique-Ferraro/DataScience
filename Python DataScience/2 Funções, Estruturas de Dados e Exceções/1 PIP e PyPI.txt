@@ -1,0 +1,9 @@
+O PIP é um gerenciador de bibliotecas para Python. Nele temos acesso a todas as bibliotecas já instaladas em nossa aplicação junto com a versão de cada uma delas. A partir das linhas de comando, podemos instalar, atualizar e remover pacotes Python facilmente. Com o pip, podemos facilmente instalar pacotes de terceiros em projetos Python.
+
+Para conseguirmos acessar todos os pacotes instalados em nosso Jupyter Notebook, no Colab, podemos escrever o seguinte código:
+
+# Imprimindo todos os pacotes instalados no ambiente e suas versões
+!pip listCOPIAR CÓDIGO
+O PIP funciona conectando-se ao Python Package Index (PyPI) que é o maior repositório centralizado para pacotes Python com milhares de bibliotecas disponíveis para instalação. Podemos pesquisar no PyPI para encontrar pacotes que atendam às necessidades e, em seguida, usar o pip para instalá-los em nossos projetos.
+
+O PyPI é mantido pela Python Software Foundation e contém uma ampla variedade de pacotes Python. Nele são publicados pacotes Python para que outras pessoas desenvolvedoras possam usá-los. Logo, o PIP e o PyPI são duas ferramentas importantes em Python.

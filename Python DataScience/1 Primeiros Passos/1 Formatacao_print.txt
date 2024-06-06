@@ -1,0 +1,83 @@
+Para saber mais: formatações do print()
+PRÓXIMA ATIVIDADE
+
+Conseguimos visualizar o resultado de variáveis dentro de strings, bem como imprimir o texto final em um print. Durante a aula, aprendemos a utilizar a formatação f-string (ou formatação de string), na qual colocamos um f antes da criação da string e as variáveis entre chaves {}. Exemplo:
+
+nome = "Ana Maria"
+idade = 17
+print(f"O nome da aluna é {nome} e sua idade é {idade} anos.")COPIAR CÓDIGO
+Saída: O nome da aluna é Ana Maria e sua idade é 17 anos.
+
+Mas existem outras formatações, como o uso do operador de formatação de string ou da função .format().
+
+Operador de formatação
+Esse operador de formatação permite a inserção de variáveis em pontos específicos na string com o operador %. Esse operador funciona como um marcador, informando onde o valor da variável vai ser exposto na string.
+
+O % precisa ser acompanhado de uma palavra-chave para cada tipo de variável que se deseja adicionar. Seguindo a tabela abaixo:
+
+Tipo de variável	Palavra-chave
+string	%s
+inteiro	%d
+float	%f
+caractere	%c
+Desse modo, para inserirmos uma variável, podemos adicionar o operador pela string no ponto desejado e, após o fim da string, adicionamos novamente o %, mas agora especificando a variável entre parênteses. Podemos observar essa estrutura no exemplo abaixo:
+
+nome_aluno = 'Fabricio Daniel'
+
+print('Nome do aluno: %s' %(nome_aluno))COPIAR CÓDIGO
+Saída: Nome do aluno: Fabricio Daniel
+
+Caso tenha mais de uma variável, devemos ordená-las conforme o surgimento delas no texto e separá-las por vírgula.
+
+nome_aluno = 'Fabricio Daniel'
+idade_aluno = 15
+media_aluno = 8.45
+
+print('Nome do aluno é %s, ele tem %d anos e sua média é %f.' %(nome_aluno, idade_aluno, media_aluno))COPIAR CÓDIGO
+Saída: Nome do aluno é Fabricio Daniel, ele tem 15 anos e sua média é 8.450000.
+
+Quando trabalhamos com pontos flutuantes (float), podemos determinar a quantidade de casas decimais após a vírgula usando a sintaxe %.xf, onde x é o número de casas desejadas. Utilizando as mesmas variáveis do exemplo anterior, o código com %.xf ficaria da seguinte maneira:
+
+print('Nome do aluno é %s, ele tem %d anos e sua média é %.2f.' %(nome_aluno, idade_aluno, media_aluno))COPIAR CÓDIGO
+Saída: Nome do aluno é Fabricio Daniel, ele tem 15 anos e sua média é 8.45.
+
+Uma observação: os operadores de formatação de strings com % não funcionam diretamente com valores booleanos. Uma maneira de lidar com isso é convertendo o valor booleano para uma string antes de usá-lo na formatação com a função str(). Por exemplo:
+
+x = True
+print("Valor de x: %s" % str(x))COPIAR CÓDIGO
+Isso não acontece com a formatação f-string ou .format.
+
+format
+É possível também usar o método format() para fazer a formatação de strings. Ele é mais flexível e permite passar as variáveis diretamente dentro da string, sem a necessidade dos operadores %. Seus marcadores são apenas as {}. Exemplo:
+
+nome_aluno = 'Fabricio Daniel'
+
+print('Nome do aluno: {}'.format(nome_aluno))COPIAR CÓDIGO
+Saída: Nome do aluno: Fabricio Daniel
+
+Do mesmo modo que o operador, conseguimos aplicar com mais variáveis:
+
+nome_aluno = 'Fabricio Daniel'
+idade_aluno = 15
+media_aluno = 8.45
+
+print('Nome do aluno é {}, ele tem {} anos e sua média é {}.' .format(nome_aluno, idade_aluno, media_aluno))COPIAR CÓDIGO
+Saída: Nome do aluno é Fabricio Daniel, ele tem 15 anos e sua média é 8.45.
+
+Note que, com format, não temos o problema das casas decimais do ponto flutuante. Esse problema não é presente também no formato f-string.
+
+Em resumo, cada uma dessas formas tem suas vantagens e desvantagens, indico utilizar a forma f-string, pois é mais legível e fácil de usar. Mesmo assim, cada pessoa desenvolvedora pode escolher a forma que achar mais apropriada.
+
+Caracteres especiais
+Além da formatação de inserção de variáveis dentro de uma string, também existem os caracteres especiais. Caracteres especiais são usados para representar ações especiais ou caracteres que não podem ser digitados diretamente, como o Enter e tabulação. Vamos conhecer alguns deles? Busque reproduzir todos os exemplos e visualizar o resultado final.
+
+\n é o caractere de nova linha, ele é usado para pular uma linha no texto (função do Enter). Exemplo:
+print("Estudar é um esforço constante,\nÉ como cultivar uma planta,\nPrecisamos de dedicação e paciência,\nPara ver o fruto amadurecer.")COPIAR CÓDIGO
+\t é o caractere de tabulação, ele é usado para adicionar um espaço de tabulação no texto. Exemplo:
+print('Quantidade\tQualidade\n5 amostras\tAlta\n3 amostras\tBaixa')COPIAR CÓDIGO
+\\ é usado para imprimir uma única barra invertida. Caso não seja usada a dupla barra invertida, o código poderá resultar em erro ou em um resultado inesperado, pois o Python considera a \ um chamado para um caractere especial. Para garantir que não ocorram erros, usamos esta sintaxe. Exemplo:
+print("Caminho do arquivo: C:\\arquivos\\documento.csv")COPIAR CÓDIGO
+\" é usado para imprimir aspas duplas quando estamos trabalhando com uma string criada a partir de aspas duplas ". Caso seja uma string criada por aspas simples ', isso não é necessário. Um exemplo:
+print("Ouvi uma vez \"Os frutos do conhecimento são os mais doces e duradouros de todos.\"")COPIAR CÓDIGO
+\' é usado para imprimir aspas simples quando estamos trabalhando com uma string criada a partir de aspas simples '. Caso seja uma string criada por aspas duplas ", isso não é necessário. Exemplo:
+print('Minha professora uma vez disse

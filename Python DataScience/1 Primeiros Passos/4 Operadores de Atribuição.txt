@@ -1,0 +1,17 @@
+Um operador de atribuição permite atribuir um dado a uma variável. Já trabalhamos bastante com o principal operador de atribuição do Python, o operador =, que faz uma atribuição literal de um valor a uma dada variável, como idade = 20, escolaridade = 'superior', etc.
+
+Também conhecemos o operador de soma +=, o que adiciona um valor especificado na variável, como no exemplo:
+
+preco = 2.00
+preco += 3
+print(preco)COPIAR CÓDIGO
+Saída: 5.0
+
+Mas, além desses, existem outros operadores de atribuição que também permitem alterar os valores das variáveis. Os operadores, descrição e exemplo podem ser encontrados na tabela abaixo.
+
+Operador	Descrição	Exemplo
+-=	Subtrai um valor na variável	preco-=5
+*=	Multiplica um valor pela variável	preco*=3
+/=	Divide a variável por um valor	preco/=2
+//=	Realiza divisão inteira da variável por um valor	preco//=6
+%=	Calcula o resto da divisão do valor na variável e atribui o resultado à variável	preco%=5

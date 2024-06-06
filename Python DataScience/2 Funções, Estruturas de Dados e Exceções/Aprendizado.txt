@@ -1,0 +1,7 @@
+1 BIBLIOTECAS
+
+Instalar e importar uma biblioteca;
+Instalar uma versão específica de uma biblioteca;
+Verificar a versão de uma biblioteca;
+Utilizar pacotes/bibliotecas e importar métodos específicos destas.
+

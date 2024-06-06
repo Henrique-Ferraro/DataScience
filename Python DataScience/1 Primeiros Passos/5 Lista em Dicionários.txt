@@ -1,0 +1,15 @@
+Podemos associar estruturas de dados a estruturas de dados, um exemplo são listas dentro de dicionários. As listas, nesse caso, podem ser armazenadas nos valores de um dicionário de forma que cada chave pode ter uma lista associada a ela. Isso é útil quando precisamos armazenar vários valores relacionados a uma única chave. Por exemplo, podemos construir um conjunto de dados de uma loja de forma que contenha uma chave com os nomes de cada produto e outra chave contendo os preços correspondentes:
+
+loja = {'nomes': ['televisão', 'celular', 'notebook', 'geladeira', 'fogão'],
+        'precos': [2000, 1500, 3500, 4000, 1500]}COPIAR CÓDIGO
+Para acessar os valores podemos usar um agrupamento de laços for:
+
+for chave, elementos in loja.items():
+  print(f'Chave: {chave}\nElementos:')
+  for dado in elementos:
+    print(dado)COPIAR CÓDIGO
+O primeiro laço, o laço mais externo, vai fazer a leitura dos itens dentro do dicionário (chaves e elementos). Sabendo que os elementos serão listas, podemos acessar os dados das listas com outro laço de repetição que vai estar dentro do primeiro laço. O laço mais interno vai ler os elementos de cada lista por vez e imprimir os valores dentro deles.
+
+Além disso, também podemos realizar operações comuns em listas, como adicionar, remover ou contar itens na lista associada a uma chave do dicionário.
+
+Você pode copiar os códigos e executá-los no Colab para verificar a saída.

@@ -1,0 +1,9 @@
+C:\Users\polez\source\repos\FrontCRUD\Models\obj\Debug\Models.csproj.AssemblyReference.cache
+C:\Users\polez\source\repos\FrontCRUD\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+C:\Users\polez\source\repos\FrontCRUD\Models\bin\Debug\Models.dll
+C:\Users\polez\source\repos\FrontCRUD\Models\bin\Debug\Models.pdb
+C:\Users\polez\source\repos\FrontCRUD\Models\bin\Debug\System.Data.SqlClient.dll
+C:\Users\polez\source\repos\FrontCRUD\Models\bin\Debug\System.Data.SqlClient.xml
+C:\Users\polez\source\repos\FrontCRUD\Models\obj\Debug\Models.csproj.CopyComplete
+C:\Users\polez\source\repos\FrontCRUD\Models\obj\Debug\Models.dll
+C:\Users\polez\source\repos\FrontCRUD\Models\obj\Debug\Models.pdb

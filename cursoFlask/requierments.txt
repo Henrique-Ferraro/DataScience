@@ -1,0 +1,9 @@
+Python
+Flask
+PyCharm
+Bootstrap: 5.1.x
+MySQL
+mysql-connector-python
+Flask-SQLAlchemy
+Flask-WTF
+Flask-Bcrypt

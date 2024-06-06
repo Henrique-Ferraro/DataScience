@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android.padding="8dp">
+    <TextView
+        android:text="Nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15px"
+        android:testStyle="bold"
+        android:id="@+id/txtvNome"
+        android:paddingLeft="5dp"/>
+    <TextView
+        android:text="CPF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15px"
+        android:testStyle="bold"
+        android:id="@+id/txtvCpf"
+        android:paddingLeft="5dp"/>
+    <TextView
+        android:text="Endereço"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15px"
+        android:testStyle="bold"
+        android:id="@+id/txtvEndereco"
+        android:paddingLeft="5dp"/>
+    <TextView
+        android:text="Telefone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15px"
+        android:testStyle="bold"
+        android:id="@+id/txtvTelefone"
+        android:paddingLeft="5dp"/>
+
+</LinearLayout>

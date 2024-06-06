@@ -1,0 +1,31 @@
+Além dos métodos mostrados em aula, podemos usar outros métodos para manipular listas em Python, vamos conhecer eles e exemplos de construção nesta atividade. Para todos os casos usaremos a lista raca_caes:
+
+raca_caes = ['Labrador Retriever',
+             'Bulldog Francês',
+             'Pastor Alemão',
+             'Poodle']COPIAR CÓDIGO
+O primeiro é o método insert(), que insere um elemento em uma determinada posição da lista. Para usar, seguimos a sintaxe lista.insert(indice, elemento), onde lista é a lista que vai receber o novo elemento, indice é o índice onde será inserido o novo elemento e elemento é o novo elemento a ser inserido.
+
+raca_caes.insert(1, 'Golden Retriever')
+raca_caesCOPIAR CÓDIGO
+Saída: ['Labrador Retriever', 'Golden Retriever', 'Bulldog Francês', 'Pastor Alemão', 'Poodle']
+
+Seguindo esse pensamento, a estrutura lista.insert(len(lista), elemento) corresponde ao uso do método append, como vimos no vídeo 5.2.
+
+O método pop(): remove o elemento de uma determinada posição da lista e o retorna como saída na execução do método. Nele, só precisamos especificar nos parêntesis qual o índice do elemento que queremos remover e ele será apagado da lista. Portanto, vamos remover a raça Golden Retriever que adicionamos no método passado.
+
+raca_caes.pop(1)COPIAR CÓDIGO
+Saída: 'Golden Retriever'
+
+O método index() retorna o índice de um elemento específico na lista. Para ele retornar o índice, especificamos o elemento entre parêntesis. Vamos identificar o índice da raça Pastor Alemão na lista:
+
+raca_caes.index('Pastor Alemão')COPIAR CÓDIGO
+Saída: 2
+
+O método sort() organiza os elementos da lista em ordem crescente ou decrescente. Caso sejam palavras, a ordem é dada por sequência alfabética ou inversa à alfabética. Para ordenar os valores podemos apenas declarar o método sort que a lista será organizada em ordem. Vamos ordenar alfabeticamente a lista raca_caes:
+
+raca_caes.sort()
+raca_caesCOPIAR CÓDIGO
+Saída: ['Bulldog Francês', 'Labrador Retriever', 'Pastor Alemão', 'Poodle']
+
+Para mais opções e descrições de métodos, acesse a documentação do Python.
